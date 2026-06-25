@@ -32,7 +32,7 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black p-4 relative overflow-hidden">
       {/* Background blob */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-brand-pink opacity-20 rounded-full blur-3xl" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-brand-copper opacity-20 rounded-full blur-3xl" />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-brand-gold opacity-10 rounded-full blur-3xl" />
 
       <div className="relative z-10 w-full max-w-md">
@@ -40,8 +40,8 @@ export default function Login() {
           {/* Logo */}
           <div className="flex items-center justify-center mb-6">
             <div className="relative">
-              <div className="absolute inset-0 bg-brand-pink rounded-full blur-2xl opacity-40 animate-pulse" />
-              <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-brand-pink to-pink-400 flex items-center justify-center">
+              <div className="absolute inset-0 bg-brand-copper rounded-full blur-2xl opacity-40 animate-pulse" />
+              <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-brand-copper to-brand-bronze flex items-center justify-center">
                 <Droplets className="w-10 h-10 text-white" />
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Login() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-10 pr-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-pink focus:border-transparent"
+                  className="w-full pl-10 pr-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-copper focus:border-transparent"
                   placeholder="you@greasetrapers.com"
                   autoComplete="email"
                 />
@@ -79,7 +79,7 @@ export default function Login() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-pink focus:border-transparent"
+                  className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-copper focus:border-transparent"
                   placeholder="••••••••"
                   autoComplete="current-password"
                 />
@@ -103,7 +103,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-brand-pink to-pink-500 text-white font-medium py-2.5 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-gradient-to-r from-brand-copper to-brand-bronze text-white font-medium py-2.5 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {loading ? (
                 <>

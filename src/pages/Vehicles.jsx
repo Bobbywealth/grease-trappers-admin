@@ -68,7 +68,7 @@ export default function Vehicles() {
                     {v.license_plate && <p className="text-sm text-gray-500">{v.license_plate}</p>}
                   </div>
                 </div>
-                <button onClick={() => openEdit(v)} className="p-1.5 text-gray-400 hover:text-brand-pink hover:bg-pink-50 rounded">
+                <button onClick={() => openEdit(v)} className="p-1.5 text-gray-400 hover:text-brand-copper hover:bg-brand-cream rounded">
                   <Edit2 className="w-4 h-4" />
                 </button>
               </div>

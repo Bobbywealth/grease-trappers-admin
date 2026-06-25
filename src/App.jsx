@@ -20,7 +20,7 @@ function ProtectedRoute({ children }) {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center bg-gray-50">
-        <div className="w-8 h-8 border-4 border-brand-pink border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-4 border-brand-copper border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }

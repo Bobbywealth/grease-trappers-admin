@@ -8,7 +8,7 @@ import { apiGet } from '../lib/api';
 
 function StatCard({ icon: Icon, label, value, accent = 'pink', sub, loading }) {
   const colors = {
-    pink: 'bg-pink-50 text-brand-pink',
+    pink: 'bg-brand-cream text-brand-copper',
     blue: 'bg-blue-50 text-blue-600',
     green: 'bg-green-50 text-green-600',
     yellow: 'bg-yellow-50 text-yellow-600',
@@ -103,7 +103,7 @@ export default function Dashboard() {
               <Activity className="w-4 h-4 text-green-500" />
               Active Now
             </h3>
-            <Link to="/live-ops" className="text-xs text-brand-pink hover:underline flex items-center gap-1">
+            <Link to="/live-ops" className="text-xs text-brand-copper hover:underline flex items-center gap-1">
               Live Map <ChevronRight className="w-3 h-3" />
             </Link>
           </div>
@@ -156,12 +156,12 @@ export default function Dashboard() {
               </div>
               <Truck className="w-8 h-8 text-blue-400" />
             </div>
-            <div className="flex items-center justify-between p-3 bg-pink-50 rounded-lg">
+            <div className="flex items-center justify-between p-3 bg-brand-cream rounded-lg">
               <div>
-                <div className="text-2xl font-bold text-brand-pink">{totals.active_contracts || 0}</div>
-                <div className="text-xs text-pink-600">Active contracts</div>
+                <div className="text-2xl font-bold text-brand-copper">{totals.active_contracts || 0}</div>
+                <div className="text-xs text-brand-sienna">Active contracts</div>
               </div>
-              <Briefcase className="w-8 h-8 text-pink-400" />
+              <Briefcase className="w-8 h-8 text-brand-bronze" />
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function Dashboard() {
       <div className="card overflow-hidden">
         <div className="flex items-center justify-between p-5 border-b border-gray-200">
           <h3 className="font-semibold text-gray-900">Recent Jobs</h3>
-          <Link to="/jobs" className="text-sm text-brand-pink hover:underline flex items-center gap-1">
+          <Link to="/jobs" className="text-sm text-brand-copper hover:underline flex items-center gap-1">
             View all jobs <ChevronRight className="w-4 h-4" />
           </Link>
         </div>

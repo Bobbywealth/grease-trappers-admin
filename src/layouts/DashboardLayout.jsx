@@ -33,7 +33,7 @@ export default function DashboardLayout() {
   const SidebarContent = () => (
     <>
       <div className="flex items-center gap-3 px-4 py-5 border-b border-gray-800">
-        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-pink to-pink-400 flex items-center justify-center flex-shrink-0">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-copper to-brand-bronze flex items-center justify-center flex-shrink-0">
           <Droplets className="w-5 h-5 text-white" />
         </div>
         <div className="min-w-0">
@@ -53,7 +53,7 @@ export default function DashboardLayout() {
               onClick={() => setMobileOpen(false)}
               className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
                 active
-                  ? 'bg-brand-pink text-white font-medium shadow-lg shadow-brand-pink/20'
+                  ? 'bg-brand-copper text-white font-medium shadow-lg shadow-brand-pink/20'
                   : 'text-gray-300 hover:bg-white/5 hover:text-white'
               }`}
             >
@@ -115,7 +115,7 @@ export default function DashboardLayout() {
           <div className="flex items-center gap-3">
             <button className="relative p-2 text-gray-500 hover:text-gray-700">
               <Bell className="w-5 h-5" />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-brand-pink rounded-full" />
+              <span className="absolute top-1 right-1 w-2 h-2 bg-brand-copper rounded-full" />
             </button>
 
             <div className="relative">
@@ -123,7 +123,7 @@ export default function DashboardLayout() {
                 onClick={() => setUserMenu(!userMenu)}
                 className="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-gray-100"
               >
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-pink to-pink-400 flex items-center justify-center text-white text-sm font-semibold">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-copper to-brand-bronze flex items-center justify-center text-white text-sm font-semibold">
                   {user?.name?.[0]?.toUpperCase() || 'U'}
                 </div>
                 <div className="hidden sm:block text-left">
