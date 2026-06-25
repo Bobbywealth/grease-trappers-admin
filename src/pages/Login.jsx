@@ -40,10 +40,12 @@ export default function Login() {
           {/* Logo */}
           <div className="flex items-center justify-center mb-6">
             <div className="relative">
-              <div className="absolute inset-0 bg-brand-copper rounded-full blur-2xl opacity-40 animate-pulse" />
-              <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-brand-copper to-brand-bronze flex items-center justify-center">
-                <Droplets className="w-10 h-10 text-white" />
-              </div>
+              <div className="absolute inset-0 bg-brand-copper rounded-3xl blur-2xl opacity-30 animate-pulse" />
+              <img
+                src="/logo.png"
+                alt="The Grease Trappers, LLC"
+                className="relative h-20 w-auto"
+              />
             </div>
           </div>
 
